@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1"
+  }
+}
