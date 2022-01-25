@@ -1,7 +1,6 @@
-package com.example.CoinAZBackend.helloWorld.todo;
+package com.example.CoinAZBackend.todo;
 
 import java.util.Date;
-import java.util.Objects;
 
 public class Todo {
     private long id;

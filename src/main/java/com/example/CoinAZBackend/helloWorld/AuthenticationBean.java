@@ -1,6 +1,6 @@
 package com.example.CoinAZBackend.helloWorld;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
 
     private String message;
 
@@ -12,7 +12,7 @@ public class HelloWorldBean {
         this.message = message;
     }
 
-    public HelloWorldBean(String message) {
+    public AuthenticationBean(String message) {
         this.message = message;
     }
 

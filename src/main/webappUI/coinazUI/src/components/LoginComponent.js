@@ -6,7 +6,7 @@ class LoginComponent extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            username: 'Ciaran',
+            username: 'ciaran',
             password: '',
             hasLoginFailed: false,
             showSuccessMessage: false
@@ -44,19 +44,38 @@ class LoginComponent extends React.Component{
     // }
 
     loginClicked() {
-        if (this.state.username === 'Ciaran' && this.state.password === 'dummy'){
-            AuthenticationService.registeredSuccessfulLogin(this.state.username,this.state.password);
-            this.props.history.push(`/welcome/${this.state.username}`)
-            // this.setState({showSuccessMessage:true})
-            // this.setState({hasLoginFailed:false})
+        // if (this.state.username === 'Ciaran' && this.state.password === 'dummy'){
+        //     AuthenticationService.registeredSuccessfulLogin(this.state.username,this.state.password);
+        //     this.props.history.push(`/welcome/${this.state.username}`)
+        //     // this.setState({showSuccessMessage:true})
+        //     // this.setState({hasLoginFailed:false})
+        //
+        // }
+        // else {
+        //     this.setState({showSuccessMessage:false})
+        //     this.setState({hasLoginFailed:true})
+        //
+        // }
 
-        }
-        else {
+        /*AuthenticationService
+            .executeBasicAuthenticationService(this.state.username, this.state.password)
+            .then(() => {
+                AuthenticationService.registeredSuccessfulLogin(this.state.username, this.state.password);
+                this.props.history.push(`/welcome/${this.state.username}`)
+            }).catch(() => {
+                this.setState({showSuccessMessage:false})
+                this.setState({hasLoginFailed:true})
+            })*/
+
+        AuthenticationService
+            .executeJwtAuthenticationService(this.state.username, this.state.password)
+            .then((response) => {
+                AuthenticationService.registerSuccessfulLoginForJwt(this.state.username, response.data.token);
+                this.props.history.push(`/welcome/${this.state.username}`)
+            }).catch(() => {
             this.setState({showSuccessMessage:false})
             this.setState({hasLoginFailed:true})
-
-        }
-        // console.log(this.state)
+        })
     }
 
     render() {

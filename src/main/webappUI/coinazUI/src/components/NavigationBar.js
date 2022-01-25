@@ -17,11 +17,11 @@ export default class NavigationBar extends Component {
                 <Nav className="me-auto">
                     <Link to={"dashboard"} className="nav-link">Dashboard</Link>
                     <Link to={"features"} className="nav-link">Features</Link>
-                    <Link to={"portfolio"} className="nav-link">My Portfolio</Link>
                     <Link to={"coins"} className="nav-link">Coins</Link>
                 </Nav>
                 <Nav className="navbar-right">
                     {/*<Link to={"register"} className="nav-link"> Register</Link>*/}
+                    {isUserLoggedIn &&<Link to={"portfolio"} className="nav-link">My Portfolio</Link>}
                     {isUserLoggedIn && <Link to={"todos"} className="nav-link"> Todos</Link>}
                     {!isUserLoggedIn && <Link to={"login"} className="nav-link"> Login</Link>}
                     {isUserLoggedIn && <Link to={"logout"} className="nav-link" onClick={AuthenticationService.logout}> Logout</Link>}

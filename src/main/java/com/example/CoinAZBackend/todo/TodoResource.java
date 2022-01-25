@@ -1,6 +1,5 @@
-package com.example.CoinAZBackend.helloWorld.todo;
+package com.example.CoinAZBackend.todo;
 
-import com.sun.jndi.toolkit.url.Uri;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

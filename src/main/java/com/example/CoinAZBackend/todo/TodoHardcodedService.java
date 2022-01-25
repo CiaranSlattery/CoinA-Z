@@ -1,4 +1,4 @@
-package com.example.CoinAZBackend.helloWorld.todo;
+package com.example.CoinAZBackend.todo;
 
 import org.springframework.stereotype.Service;
 
@@ -13,9 +13,16 @@ public class TodoHardcodedService {
     private static int idCounter = 0;
 
     static {
-        todos.add(new Todo(++idCounter, "Ciaran", "Learn React", new Date(), false));
-        todos.add(new Todo(++idCounter, "Ciaran", "Learn Springboot", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Learn React", new Date(), true));
+        todos.add(new Todo(++idCounter, "Ciaran", "Learn Springboot", new Date(), true));
+        todos.add(new Todo(++idCounter, "Ciaran", "Project Demo", new Date(), true));
+        todos.add(new Todo(++idCounter, "Ciaran", "Finish Backend", new Date(), false));
         todos.add(new Todo(++idCounter, "Ciaran", "Finish UI", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Run on AWS", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Project Poster", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Project Report", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Project Video", new Date(), false));
+        todos.add(new Todo(++idCounter, "Ciaran", "Project Demo", new Date(), false));
     }
 
     public List<Todo> findAll() {
