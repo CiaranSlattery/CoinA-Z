@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import axios from 'axios'
 import '../App.css';
 import Coin from '../Coin';
-import {Col, Container, Row} from "react-bootstrap";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Container} from "react-bootstrap";
+import {BrowserRouter as Router} from "react-router-dom";
 import Footer from "./Footer";
 
 function Coins()

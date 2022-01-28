@@ -1,5 +1,4 @@
-import React, {Component} from "react";
-import Welcome from "./Welcome";
+import React from "react";
 import AuthenticationService from "./AuthenticationService.js";
 
 class LoginComponent extends React.Component{

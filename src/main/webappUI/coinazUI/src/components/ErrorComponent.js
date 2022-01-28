@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 
 class ErrorComponent extends React.Component {
     render() {

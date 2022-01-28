@@ -1,7 +1,7 @@
-package com.example.CoinAZBackend;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface UserRepository extends JpaRepository<User, Long> {
-
-}
+//package com.example.CoinAZBackend;
+//
+//import org.springframework.data.jpa.repository.JpaRepository;
+//
+//public interface UserRepository extends JpaRepository<User, Long> {
+//
+//}

@@ -1,18 +1,23 @@
 package com.example.CoinAZBackend.todo;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "data")
 public class Todo {
-    private long id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String username;
     private String description;
     private Date targetDate;
     private boolean isDone;
 
-    protected Todo(){
+    public Todo(){
 
     }
-
 
     public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
         this.id = id;
@@ -22,11 +27,11 @@ public class Todo {
         this.isDone = isDone;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

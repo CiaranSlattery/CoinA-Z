@@ -15,25 +15,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Rollback(false)
 public class UserRepositoryTests {
 
-    @Autowired
-    private UserRepository repo;
-
-    @Autowired
-    private TestEntityManager entityManager;
-
-    @Test
-    public void testCreateUser(){
-        User user = new User();
-        user.setEmail("alex@gmail.com");
-        user.setPassword("alex2020");
-        user.setFirstName("Alex");
-        user.setLastName("Hebb");
-
-        User savedUser = repo.save(user);
-
-        User existUser = entityManager.find(User.class, savedUser.getId());
-
-        assertThat(existUser.getEmail()).isEqualTo(user.getEmail());
-    }
+//    @Autowired
+//    private UserRepository repo;
+//
+//    @Autowired
+//    private TestEntityManager entityManager;
+//
+//    @Test
+//    public void testCreateUser(){
+//        User user = new User();
+//        user.setEmail("alex@gmail.com");
+//        user.setPassword("alex2020");
+//        user.setFirstName("Alex");
+//        user.setLastName("Hebb");
+//
+//        User savedUser = repo.save(user);
+//
+//        User existUser = entityManager.find(User.class, savedUser.getId());
+//
+//        assertThat(existUser.getEmail()).isEqualTo(user.getEmail());
+//    }
 
 }

@@ -1,8 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios'
+import React from 'react';
 import './App.css';
 import './bootstrap.css';
-import Coin from './Coin';
 import NavigationBar from "./components/NavigationBar";
 import Dashboard from "./components/Dashboard";
 import Portfolio from "./components/Portfolio";
@@ -17,7 +15,6 @@ import ListToDosComponents from "./components/todo/ListToDos";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {Container, Row, Col} from "react-bootstrap";
 import Todo from "./components/todo/Todo";
-import AuthenticationService from "./components/AuthenticationService";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import HomePage from "./components/HomePage";
 
