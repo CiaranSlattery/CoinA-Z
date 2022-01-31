@@ -21,9 +21,10 @@ export default class NavigationBar extends Component {
                 </Nav>
                 <Nav className="navbar-right">
                     {/*<Link to={"register"} className="nav-link"> Register</Link>*/}
-                    {isUserLoggedIn &&<Link to={"portfolio"} className="nav-link">My Portfolio</Link>}
+                    {!isUserLoggedIn &&<Link to={"portfolio"} className="nav-link">Portfolio</Link>}
                     {isUserLoggedIn && <Link to={"todos"} className="nav-link"> Todos</Link>}
                     {!isUserLoggedIn && <Link to={"login"} className="nav-link"> Login</Link>}
+                    {!isUserLoggedIn && <Link to={"register"} className="nav-link"> Sign Up</Link>}
                     {isUserLoggedIn && <Link to={"logout"} className="nav-link" onClick={AuthenticationService.logout}> Logout</Link>}
                 </Nav>
             </Navbar>

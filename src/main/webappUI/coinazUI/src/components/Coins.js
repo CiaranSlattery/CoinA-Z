@@ -42,6 +42,7 @@ function Coins()
                     {filteredCoins.map(coin => {
                         return (<Coin
                                 key={coin.id}
+                                coin={coin}
                                 name={coin.name}
                                 image={coin.image}
                                 symbol={coin.symbol}

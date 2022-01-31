@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddCoin = () => {
+const CoinData = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const AddCoin = () => {
     )
 }
 
-export default AddCoin
+export default CoinData
