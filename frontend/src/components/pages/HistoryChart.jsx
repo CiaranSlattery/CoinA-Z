@@ -75,37 +75,37 @@ const HistoryChart = ({data}) => {
         </div>
             <div className = "chart-button mt-1">
                 <button
-                    onCLick={() => setTimeFormat("24h")}
+                    onClick={() => setTimeFormat("24h")}
                     className="btn btn-outline-secondary btn-sm"
                 >
                     24h
                 </button>
                 <button
-                    onCLick={() => setTimeFormat("7d")}
+                    onClick={() => setTimeFormat("7d")}
                     className="btn btn-outline-secondary btn-sm mx-1"
                 >
                     7d
                 </button>
                 <button
-                    onCLick={() => setTimeFormat("14d")}
+                    onClick={() => setTimeFormat("14d")}
                     className="btn btn-outline-secondary btn-sm mx-1"
                 >
                     14d
                 </button>
                 <button
-                    onCLick={() => setTimeFormat("30d")}
+                    onClick={() => setTimeFormat("30d")}
                     className="btn btn-outline-secondary btn-sm mx-1"
                 >
                     30d
                 </button>
                 <button
-                    onCLick={() => setTimeFormat("90d")}
+                    onClick={() => setTimeFormat("90d")}
                     className="btn btn-outline-secondary btn-sm mx-1"
                 >
                     90d
                 </button>
                 <button
-                    onCLick={() => setTimeFormat("1y")}
+                    onClick={() => setTimeFormat("1y")}
                     className="btn btn-outline-secondary btn-sm"
                 >
                     1y

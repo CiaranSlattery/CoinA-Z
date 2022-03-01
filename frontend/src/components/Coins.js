@@ -25,15 +25,12 @@ function Coins()
 
         const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
 
-
         return (
             <Router>
-                <div className="text-white"> Top 100 Coins
-                    {/*<NavigationBar/>*/}
-                </div>
+                
                 <Container>
                     <div className='coin-search'>
-                        <h1 className='coin-text'>Search a currency</h1>
+                        <h3 className='coin-text'>Top 100 Cryptocurrency Prices by Market Cap</h3>
                         <form>
                             <input type='text' placeholder='Search'
                                    className='coin-input' onChange={handleChange}/>

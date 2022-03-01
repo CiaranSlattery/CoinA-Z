@@ -1,0 +1,22 @@
+GET http://localhost:8080/jpa/assets/all
+
+<> 2022-02-27T192550.401.json
+
+###
+
+GET http://localhost:8080/assets/all
+
+<> 2022-02-27T192142.401.json
+
+###
+
+GET http://localhost:8080/assets/ping
+
+<> 2022-02-27T171943.401.json
+
+###
+
+GET http://localhost:8080/assets/ping
+
+###
+
