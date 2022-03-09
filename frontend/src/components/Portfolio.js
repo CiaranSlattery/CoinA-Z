@@ -7,6 +7,7 @@ function Portfolio() {
     
     const [search, setSearch] = useState('')
     const [coins, setCoins] = useState([]);
+    const [ciaranCoins, setCiaranCoins] = useState([]);
     
     useEffect(() => {
         axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false")
@@ -31,20 +32,23 @@ function Portfolio() {
                             className='coin-input' onChange={handleChange}/>
                     </form>
                 </div>
-                
-                {filteredCoins.map(coin => {
-                    return (<Coin
+                {console.log(filteredCoins)}
+                {filteredCoins.map(coin => 
+                     <Coin
                             key={coin.id}
                             coin={coin}
                             name={coin.name}
                             image={coin.image}
                             symbol={coin.symbol}
                             price={coin.current_price}
+                            ciaranCoins={ciaranCoins}
+                            setCiaranCoins={setCiaranCoins}
                         />
-                    );
-                })}
-        </div>     
+                    
+                )}
+        </div>    
     );
+    
 }
 
 export default Portfolio;

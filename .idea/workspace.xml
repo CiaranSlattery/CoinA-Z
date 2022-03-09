@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/entity/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/repository/AssetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/resources/AssetResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/resources/AssetResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/1960x0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Coin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Coin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CoinPortfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CoinPortfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HeaderDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/HeaderDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/portfolio/PortfolioDataService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/todo/ListToDos.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/todo/ListToDos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/todo/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/todo/Todo.js" afterDir="false" />
-    </list>
+    <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +159,7 @@
       <workItem from="1646651253435" duration="622000" />
       <workItem from="1646663818735" duration="6149000" />
       <workItem from="1646821117116" duration="3149000" />
-      <workItem from="1646850557655" duration="2018000" />
+      <workItem from="1646850557655" duration="2712000" />
     </task>
     <servers />
   </component>
