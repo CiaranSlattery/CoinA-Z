@@ -1,5 +1,5 @@
 import React from "react";
-import './components/CoinListItem/CoinListItem.css';
+import './CoinListItem.css';
 
 const CoinListItem = ({
   coin,
@@ -9,6 +9,7 @@ const CoinListItem = ({
   price,
   ciaranCoins,
   setCiaranCoins,
+  quantity
 }) => {
   const clickHandler = (e) => setCiaranCoins([...ciaranCoins, coin]);
 
@@ -26,7 +27,12 @@ const CoinListItem = ({
           <div>
             <p className="coin-data">${price}</p>
           </div>
+          {quantity && (
+            <p>QTY</p>
+            <p>{quantity}</p>
+            )}
         </div>
+        
       </div>
     </div>
   );
