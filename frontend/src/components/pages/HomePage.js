@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import Img from '../../homepage.png';
+import portfolioImg from '../../portfoliotest.png';
 import CoinHomePage from "../CoinHomepage";
 
 class HomePage extends React.Component{
@@ -14,11 +15,11 @@ class HomePage extends React.Component{
                         <h5>Welcome to Coin A-Z. Our plan is to make it easy for our users to track, search and research different crypto assets. </h5>
                         We allow our users to create their own custom portfolios where they are able to track their crypto assets in one place.
                 </div>
-                <p></p>
+                
                 <div>
                     <img src={Img} />    
                 </div>
-                <p></p>
+                
                 <div>
                     <p className="font15 whiteColor">
                         <em>Track your crypto assets with our portfolio tracker</em>
@@ -26,6 +27,12 @@ class HomePage extends React.Component{
                     <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}><em>Click here to get started </em><Link to="/portfolio">Portfolio Tracker</Link></p>
                 </div>
 
+                
+                <div>
+                    <img src={portfolioImg} />    
+                </div>
+
+                
                 <div>
                 <p><CoinHomePage/></p>
                     

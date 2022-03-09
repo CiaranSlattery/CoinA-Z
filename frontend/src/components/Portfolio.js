@@ -1,13 +1,9 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import { Card, CardGroup, Form, FormControl, InputGroup, Row, Col, Button } from "react-bootstrap";
-//import Coin from "../Coin";
 import Coin from "./CoinPortfolio";
-import { NumberBox } from 'devextreme-react/number-box';
-import NavigationBar from "./NavigationBar";
+
 
 function Portfolio() {
-
     
     const [search, setSearch] = useState('')
     const [coins, setCoins] = useState([]);
@@ -23,21 +19,11 @@ function Portfolio() {
     const handleChange = e => {
         setSearch(e.target.value)
     }
-        //axios.get('http://localhost:8080/assets');
         
     const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
 
     return (
-        <div className="text-white"> Welcome to our portfolio application! 
-        <div>Here you can create your own portfolio to manage and track.</div>
-            
-        <CardGroup>
-            <Card style={{ width: '30rem' }} className="border border-dark bg-dark text-white">
-            <Card.Header>
-                Cryptocurrency
-            </Card.Header>
-            <Card.Body >
-                <Form>
+        <div>
                 <div className='coin-search'>
                     <h3 className='coin-text'>Search currency for portfolio</h3>
                     <form>
@@ -45,6 +31,7 @@ function Portfolio() {
                             className='coin-input' onChange={handleChange}/>
                     </form>
                 </div>
+                
                 {filteredCoins.map(coin => {
                     return (<Coin
                             key={coin.id}
@@ -56,51 +43,6 @@ function Portfolio() {
                         />
                     );
                 })}
-                </Form>
-            </Card.Body>
-            </Card>
-                
-            <Card style={{ width: '30rem' }} className="border border-dark bg-dark text-white">
-            <Card.Header>
-                Quantity
-            </Card.Header>
-            <Form.Group className="mb-3" controlId="formGroupCrypto">
-                <Form.Label>Cryptocurrency</Form.Label>
-                <Form.Control />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formGroupQuantity">
-                <Form.Label>Quantity</Form.Label>
-                <div className="dx-field">
-                <div className="dx-field-label">Quantity</div>
-                <div className="dx-field-value">
-                <NumberBox
-                defaultValue={0.0}
-                showSpinButtons={true}
-                showClearButton={true}
-                />
-                </div>
-                </div>
-                <Form.Control type="quantity" placeholder="Enter Quantity" />
-            </Form.Group>
-                
-            <Card.Text>
-                    
-            </Card.Text>
-            <Button>
-                Add to portfolio!
-            </Button>
-            </Card>
-
-            <Card style={{ width: '30rem' }} className="border border-dark bg-dark text-white">
-            <Card.Header>
-                Portfolio
-            </Card.Header>
-            <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit longer.
-            </Card.Text>
-            </Card>
-        </CardGroup>
         </div>     
     );
 }

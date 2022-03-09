@@ -9,11 +9,11 @@ export default class HeaderDisplay extends Component {
 
         return(
             <div>
-                <h90>Coins: </h90>
-                <h90>Exchanges: </h90>
-                <h90>Market Cap: </h90>
-                <h90>24h Vol: </h90>
-                <h90>Dominance: </h90>
+                <h25>Coins: </h25>
+                <h25>Exchanges: </h25>
+                <h25>Market Cap: </h25>
+                <h25>24h Vol: </h25>
+                <h25>Dominance: </h25>
             </div>
         )
     }

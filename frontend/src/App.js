@@ -22,6 +22,7 @@ import CoinDetailPage from "./pages/CoinDetailPage";
 import styled, {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles} from "./themes"
 import HeaderDisplay from './components/HeaderDisplay';
+import ListPortfolioComponents from './components/ListPortfolio';
 
 const StyledApp = styled.div``;
 
@@ -48,7 +49,8 @@ function App() {
                                     <Route path="/dashboard" exact component={Dashboard}/>
                                     {/*<Route path="/features" exact component={Features}/>*/}
                                     <Route path="/features" exact component={CoinSummaryPage}/>
-                                    <Route path="/portfolio" exact component={Portfolio}/>
+                                    <Route path="/portfolio" exact component={ListPortfolioComponents}/>
+                                    <Route path="/portfolio1" exact component={Portfolio}/>
                                     <Route path="/coins" exact component={Coins}/>
                                     <Route path="/coins/:id" component={CoinDetailPage}/>
                                     <Route path="/login" exact component={LoginComponent}/>

@@ -5,110 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/ApiAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/ApiAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/Portfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/PortfolioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/PortfolioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/PortfolioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/entity/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/repository/AssetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/resources/AssetResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/resources/AssetResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ErrorOverlayEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/LegacyWDSSocketEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/utils/errorEventHandlers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/utils/formatWebpackErrors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/utils/safeThis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/globals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/options.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshRuntimeModule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/createError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/getParserHelpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/getRefreshGlobal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/getSocketIntegration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/injectRefreshEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/injectRefreshLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/utils/normalizeOptions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/loader/RefreshModule.runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/loader/RefreshSetup.runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/loader/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/dist/source-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/array-set.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/base64-vlq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/binary-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/mapping-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/mappings.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/read-wasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/source-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/lib/wasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/source-map.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/node_modules/source-map/source-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/CompileErrorTrace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/PageHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/RuntimeErrorFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/RuntimeErrorHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/RuntimeErrorStack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/components/Spacer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/containers/CompileErrorContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/containers/RuntimeErrorContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/utils/debounce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/utils/formatFilename.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/utils/removeAllChildren.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/WDSSocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/WHMEventSource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/WPSSocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/utils/getCurrentScriptSource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/utils/getSocketUrlParts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/sockets/utils/parseQuery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/types/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/dist/error-stack-parser.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/error-stack-parser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/error-stack-parser.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/error-stack-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/error-stack-parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/error-stack-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/stackframe/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/stackframe/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/stackframe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/stackframe/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/stackframe/karma.conf.ci.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/stackframe/karma.conf.ci.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/stackframe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/stackframe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/1960x0.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Coins.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Coins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LogoutComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/LogoutComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Coin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Coin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CoinPortfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CoinPortfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HeaderDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/HeaderDisplay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/HistoryChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/HistoryChart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/portfolio/PortfolioDataService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/todo/ListToDos.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/todo/ListToDos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/todo/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/todo/Todo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +54,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Inspector" value="false" />
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
       </map>
@@ -255,7 +173,16 @@
       <workItem from="1645623953895" duration="1221000" />
       <workItem from="1645982040626" duration="4496000" />
       <workItem from="1646045790206" duration="4612000" />
-      <workItem from="1646124211934" duration="1193000" />
+      <workItem from="1646124211934" duration="3718000" />
+      <workItem from="1646220460227" duration="1305000" />
+      <workItem from="1646240568513" duration="16928000" />
+      <workItem from="1646344682548" duration="1000" />
+      <workItem from="1646387401563" duration="3547000" />
+      <workItem from="1646594674255" duration="6132000" />
+      <workItem from="1646651253435" duration="622000" />
+      <workItem from="1646663818735" duration="6149000" />
+      <workItem from="1646821117116" duration="3149000" />
+      <workItem from="1646850557655" duration="2018000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import AuthenticationService from "./AuthenticationService";
+import Img from "../CoinA-Z40.png"
 
 export default class NavigationBar extends Component {
     render() {
@@ -12,7 +13,7 @@ export default class NavigationBar extends Component {
         return (
             <Navbar bg="dark" variant="dark">
                 <Link to={""} className="navbar-brand">
-                    <img src="/bitcoin-btc-logo.png" width="25" height="25" alt={"brand"}/> Coin A-Z
+                    <img src={Img}/>
                 </Link>
                 <Nav className="mr-auto">
                     <Link to={"dashboard"} className="nav-link">Dashboard</Link>
