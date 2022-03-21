@@ -1,38 +1,30 @@
 import React from "react";
 import './CoinListItem.css';
 
-const CoinListItem = ({
+const 
+CoinListItem = ({
   coin,
-  name,
-  image,
-  symbol,
-  price,
-  ciaranCoins,
-  setCiaranCoins,
+  ciaranCoin,
+  setCiaranCoin,
   quantity
 }) => {
-  const clickHandler = (e) => setCiaranCoins([...ciaranCoins, coin]);
 
   return (
     <div
       className="coin-container"
       style={{ cursor: "pointer" }}
-      onClick={clickHandler}
+      onClick={() => setCiaranCoin([coin])}
     >
+      {console.log(ciaranCoin)}
       <div className="coin-row">
         <div className="coin">
-          <img src={image} alt="crypto" />
-          <h1>{name}</h1>
-          <p className="coin-symbol">{symbol}</p>
+          <img src={coin.image} alt="crypto" />
+          <h1>{coin.name}</h1>
+          <p className="coin-symbol">{coin.symbol}</p>
           <div>
-            <p className="coin-data">${price}</p>
+            <p className="coin-data">${coin.current_price}</p>
           </div>
-          {quantity && (
-            <p>QTY</p>
-            <p>{quantity}</p>
-            )}
         </div>
-        
       </div>
     </div>
   );

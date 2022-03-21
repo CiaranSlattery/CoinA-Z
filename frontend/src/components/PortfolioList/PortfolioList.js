@@ -1,61 +1,60 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import {
-  Card,
-  CardGroup,
-  Form,
-  FormControl,
-  InputGroup,
-  Row,
-  Col,
-  Button,
-} from "react-bootstrap";
+import { Card, CardGroup, Button } from "react-bootstrap";
 //import Coin from "../Coin";
-import PortfolioDataService from "../PortfolioDataService";
-import AuthenticationService from "../AuthenticationService";
-import Portfolio from "../Portfolio";
+import PortfolioDataService from "../portfolio/PortfolioDataService";
+import AuthenticationService from "../User/AuthenticationService";
+import UserPortfolioCoins from "../portfolio/UserPortfolioCoins";
 // import Update from "../CoinPortfolio";
 import CoinListItem from "../CoinListItem/CoinListItem";
-import './PortfolioList.css'
+import "./PortfolioList.css";
+import mockdata from "../../mockdata.json";
+import UserPortfolio from "../UserPortfolio/UserPortfolio";
 
 const PortfolioList = () => {
+  const [ciaranCoin, setCiaranCoin] = useState([]);
+  const [coinQuantity, setCoinQuantity] = useState(0);
+  const [coins, setCoins] = useState([]);
+  const [portfolio, setPortfolio] = useState([]);
+  const [toDos, setToDos] = useState([]);
+  const [ping, setPing] = useState("");
 
-    const [ciaranCoins, setCiaranCoins] = useState([]);
-    const [portfolio, setPortfolio] = useState([]);
-    const [toDos, setToDos] = useState([]);
-    const [ping, setPing] = useState('');
-  
-      const refreshPortfolio = () => {
-        let username = AuthenticationService.getLoggedInUserName();
-        PortfolioDataService.retrieveAllPortfolio(username).then((response) => {
-          setToDos(response.data);
-        });
-      }
+  // const refreshPortfolio = () => {
+  //   let username = AuthenticationService.getLoggedInUserName();
+  //   PortfolioDataService.retrieveAllPortfolio(username).then((response) => {
+  //     setToDos(response.data);
+  //   });
+  // };
 
-      const retrievePing = () => {
-        let username = AuthenticationService.getLoggedInUserName();
-        PortfolioDataService.retrievePing(username).then((response) => {
-          console.log(response.data)
-          setPing(response.data);
-        });
-      }
-    
-      const addAssetPortfolio = () => {
-        let username = AuthenticationService.getLoggedInUserName();
-        PortfolioDataService.addAssetPortfolio(username).then((response) => {
-          retrievePing();
-        });
-      }
+  const retrievePing = () => {
+    let username = AuthenticationService.getLoggedInUserName();
+    PortfolioDataService.retrievePing(username).then((response) => {
+      console.log(response.data);
+      setPing(response.data);
+    });
+  };
 
+  const submitCoin = async (event) => {
+    event.preventDefault();
 
-    useEffect(() => {
-        refreshPortfolio()
-    }, [])
-  
-  // retrieveAsset(data){
-  //     PortfolioDataService.retrieveAsset(data)
+    let username = AuthenticationService.getLoggedInUserName();
+    try {
+      await PortfolioDataService.addAssetPortfolio(
+        username,
+        ciaranCoin[0],
+        coinQuantity
+      );
+    } catch (error) {
+      console.log(error.message);
+      // throw Error(error.message)
+    }
+    console.log("mockdata", mockdata);
+    setCiaranCoin([]);
+    setCoinQuantity(0);
+  };
 
-  // }
+  useEffect(() => {
+    //refreshPortfolio();
+  }, []);
 
   return (
     <div className="text-white">
@@ -67,7 +66,12 @@ const PortfolioList = () => {
           style={{ width: "30rem" }}
           className="border border-dark bg-dark text-white"
         >
-          <Portfolio ciaranCoins={ciaranCoins} setCiaranCoins={setCiaranCoins} />
+          <UserPortfolioCoins
+            coins={coins}
+            setCoins={setCoins}
+            ciaranCoin={ciaranCoin}
+            setCiaranCoin={setCiaranCoin}
+          />
         </Card>
 
         <Card
@@ -75,22 +79,29 @@ const PortfolioList = () => {
           className="border border-dark bg-dark text-white"
         >
           <Card.Header>Cryptocurrency</Card.Header>
+          <div className="container">
+            {ciaranCoin.map((coin) => (
+              <CoinListItem key={coin.id} coin={coin} />
+            ))}
 
-          <h5>Quantity</h5>
-          {ciaranCoins.map((coin) => 
-           <CoinListItem
-           key={coin.id}
-           coin={coin}
-           name={coin.name}
-           image={coin.image}
-           symbol={coin.symbol}
-           price={coin.current_price}
-         />
-          )}
-          <input />
-          <Button className="btn btn-success" onClick={addAssetPortfolio}>
-            Add to portfolio!
-          </Button>
+            <form onSubmit={submitCoin}>
+              <h5>
+                Quantity:{" "}
+                <input
+                  type="number"
+                  placeholder="Enter Quantity"
+                  name="quantity"
+                  value={coinQuantity}
+                  onChange={(event) => setCoinQuantity(event.target.value)}
+                />
+              </h5>
+              {/* <Button className="btn btn-success" onClick={addAssetPortfolio}> */}
+
+              <button className="btn btn-success" type="submit">
+                Add to portfolio!
+              </button>
+            </form>
+          </div>
         </Card>
 
         <Card
@@ -98,36 +109,20 @@ const PortfolioList = () => {
           className="border border-dark bg-dark text-white"
         >
           <Card.Header>Portfolio</Card.Header>
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Asset </th>
-                <th>Quantity </th>
-                <th>Value </th>
-              </tr>
-            </thead>
-            <tbody>
-              {portfolio.map((asset) => (
-                <tr key={asset.id}>
-                  <td>{asset.name}</td>
-                  <td>{asset.quantity}</td>
-                  <td>{asset.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <Card.Text>
+          <UserPortfolio coins={coins} />
+         
+          {/* <Card.Text>
             Ping:
             <div>{retrievePing.toString()}</div>
-          </Card.Text>
+          </Card.Text> */}
 
           <Button className="btn btn-success" onClick={retrievePing}>
-            View Portfolio!
+            View Ping!
           </Button>
 
-          <Button className="btn btn-success" onClick={refreshPortfolio}>
+          {/* <Button className="btn btn-success" onClick={refreshPortfolio}>
             View Portfolio!
-          </Button>
+          </Button> */}
         </Card>
       </CardGroup>
     </div>

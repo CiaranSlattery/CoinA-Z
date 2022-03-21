@@ -3,8 +3,7 @@ import axios from "axios";
 import "../App.css";
 import Coin from "../Coin";
 import { Container } from "react-bootstrap";
-import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "./pages/Footer";
 
 function Coins() {
   const [coins, setCoins] = useState([]);
@@ -31,39 +30,37 @@ function Coins() {
   );
 
   return (
-    <Router>
-      <Container>
-        <div className="coin-search">
-          <h3 className="coin-text">
-            Top 100 Cryptocurrency Prices by Market Cap
-          </h3>
-          <form>
-            <input
-              type="text"
-              placeholder="Search"
-              className="coin-input"
-              onChange={handleChange}
-            />
-          </form>
-        </div>
-        {filteredCoins.map((coin) => {
-          return (
-            <Coin
-              key={coin.id}
-              coin={coin}
-              name={coin.name}
-              image={coin.image}
-              symbol={coin.symbol}
-              marketcap={coin.market_cap}
-              price={coin.current_price}
-              priceChange={coin.price_change_percentage_24h}
-              volume={coin.total_volume}
-            />
-          );
-        })}
-      </Container>
+    <Container>
+      <div className="coin-search">
+        <h3 className="coin-text">
+          Top 100 Cryptocurrency Prices by Market Cap
+        </h3>
+        <form>
+          <input
+            type="text"
+            placeholder="Search"
+            className="coin-input"
+            onChange={handleChange}
+          />
+        </form>
+      </div>
+      {filteredCoins.map((coin) => {
+        return (
+          <Coin
+            key={coin.id}
+            coin={coin}
+            name={coin.name}
+            image={coin.image}
+            symbol={coin.symbol}
+            marketcap={coin.market_cap}
+            price={coin.current_price}
+            priceChange={coin.price_change_percentage_24h}
+            volume={coin.total_volume}
+          />
+        );
+      })}
       <Footer />
-    </Router>
+    </Container>
   );
 }
 

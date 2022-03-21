@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-coins {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}

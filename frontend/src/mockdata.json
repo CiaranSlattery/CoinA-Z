@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bitcoin",
+    "quantity": 2
+  },
+  {
+    "id": "ethereum",
+    "quantity": 43
+  },
+  {
+    "id": "cardano",
+    "quantity": 20000
+  },
+  {
+    "id": "tether",
+    "quantity": 10000
+  },
+  {
+    "id": "ripple",
+    "quantity": 10000
+  }
+]

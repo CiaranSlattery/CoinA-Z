@@ -1,6 +1,6 @@
 import React from "react";
 import TodoDataService from "./TodoDataService";
-import AuthenticationService from "../AuthenticationService";
+import AuthenticationService from "../User/AuthenticationService";
 import moment from "moment";
 
 class ListToDosComponents extends React.Component {
