@@ -1,50 +1,40 @@
 package az.coin.backendapp.portfolioTracker;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "asset")
 public class Asset {
 
     @Id
-    @GeneratedValue
-    private Long id;
+    private String id;
     private String username;
-    private String symbol;
+    private String currency;
     private Float quantity;
 
-    public Asset(){
+    public String getId() { return id; }
 
-    }
-
-    public Asset(long id, String username, String symbol){
-        this.id = id;
-        this.username = username;
-        this.symbol = symbol;
-
-    }
-
-    public Long getId() { return id; }
-
-    public void setId(Long id) { this.id = id; }
+    public void setId(String id) { this.id = id; }
 
     public String getUsername() { return username; }
 
     public void setUsername(String username) { this.username = username; }
 
-    public String getSymbol() { return symbol; }
+    public String getCurrency() { return currency; }
 
-    public void setSymbol(String symbol) { this.symbol = symbol; }
+    public void setCurrency(String symbol) { this.currency = symbol; }
+
+    public Float getQuantity() { return quantity; }
+
+    public void setQuantity(Float quantity) { this.quantity = quantity; }
 
     @Override
-    public String toString() {
-        return "Asset{" +
-                "id=" + id +
-                ", symbol='" + symbol + '\'' +
-                ", name='" + username + '\'' +
-                '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Asset asset = (Asset) o;
+        if (id != asset.id)
+            return false;
+        return true;
     }
 }

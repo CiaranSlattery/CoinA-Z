@@ -15,18 +15,6 @@ public class Todo {
     private Date targetDate;
     private boolean isDone;
 
-    public Todo(){
-
-    }
-
-    public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
-        this.id = id;
-        this.username = username;
-        this.description = description;
-        this.targetDate = targetDate;
-        this.isDone = isDone;
-    }
-
     public Long getId() {
         return id;
     }

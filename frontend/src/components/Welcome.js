@@ -19,6 +19,7 @@ import HelloWorldService from "./HelloWorldService";
                 <h1>Welcome!</h1>
                 <div className="container">
                      Welcome {this.props.match.params.name}. You can view your todos here <Link to="/todos">here</Link>
+                     <p>You can view your portfolio here <Link to="/portfolio">here</Link></p>
                 </div>
                  <div className="container">
                      Click here to get a customized welcome message.

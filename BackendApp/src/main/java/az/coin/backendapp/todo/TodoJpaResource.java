@@ -13,8 +13,7 @@ import java.util.List;
 @CrossOrigin(origins="http://localhost:3000")
 public class TodoJpaResource {
 
-    @Autowired
-    private TodoHardcodedService todoService;
+
 
     @Autowired
     private TodoJpaRepository todoJpaRepository;

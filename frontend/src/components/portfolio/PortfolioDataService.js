@@ -10,13 +10,14 @@ class portfolioDataService {
     return axios.get(`${JPA_API_URL}/users/${name}/portfolio`);
   }
 
-  addAssetPortfolio(name, asset, quantity) {
-    return axios.post(`${JPA_API_URL}/users/${name}/portfolio/`, asset, quantity);
+  deleteAssetPortfolio(name, id) {
+    return axios.delete(`${JPA_API_URL}/users/${name}/portfolio/${id}`);
   }
 
-  addQuantityPortfolio(name, quantity) {
-    return axios.post(`${JPA_API_URL}/users/${name}/quantity/`, quantity);
+  addAssetPortfolio(name, asset) {
+    return axios.post(`${JPA_API_URL}/users/${name}/portfolio/`, asset);
   }
+
 }
 
 export default new portfolioDataService();

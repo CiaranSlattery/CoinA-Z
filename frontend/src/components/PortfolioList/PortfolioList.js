@@ -15,15 +15,16 @@ const PortfolioList = () => {
   const [coinQuantity, setCoinQuantity] = useState(0);
   const [coins, setCoins] = useState([]);
   const [portfolio, setPortfolio] = useState([]);
-  const [toDos, setToDos] = useState([]);
+  const [Assets, setAssets] = useState([]);
   const [ping, setPing] = useState("");
 
-  // const refreshPortfolio = () => {
-  //   let username = AuthenticationService.getLoggedInUserName();
-  //   PortfolioDataService.retrieveAllPortfolio(username).then((response) => {
-  //     setToDos(response.data);
-  //   });
-  // };
+  const refreshPortfolio = () => {
+    let username = AuthenticationService.getLoggedInUserName();
+    PortfolioDataService.retrieveAllPortfolio(username).then((response) => {
+      console.log(response.data);
+      setAssets(response.data);
+    });
+  };
 
   const retrievePing = () => {
     let username = AuthenticationService.getLoggedInUserName();
@@ -33,15 +34,23 @@ const PortfolioList = () => {
     });
   };
 
+  
+
   const submitCoin = async (event) => {
     event.preventDefault();
 
     let username = AuthenticationService.getLoggedInUserName();
+
+    const asset = {
+      id: ciaranCoin[0].id,
+      userCoin: ciaranCoin[0],
+      quantity: coinQuantity,
+    };
+
     try {
       await PortfolioDataService.addAssetPortfolio(
         username,
-        ciaranCoin[0],
-        coinQuantity
+        asset
       );
     } catch (error) {
       console.log(error.message);
@@ -53,7 +62,7 @@ const PortfolioList = () => {
   };
 
   useEffect(() => {
-    //refreshPortfolio();
+    refreshPortfolio();
   }, []);
 
   return (
@@ -109,20 +118,11 @@ const PortfolioList = () => {
           className="border border-dark bg-dark text-white"
         >
           <Card.Header>Portfolio</Card.Header>
-          <UserPortfolio coins={coins} />
-         
-          {/* <Card.Text>
-            Ping:
-            <div>{retrievePing.toString()}</div>
-          </Card.Text> */}
+          <UserPortfolio coins={coins} ciaranCoin={ciaranCoin} />
 
-          <Button className="btn btn-success" onClick={retrievePing}>
+          <Button className="btn btn-success" onClick={refreshPortfolio}>
             View Ping!
           </Button>
-
-          {/* <Button className="btn btn-success" onClick={refreshPortfolio}>
-            View Portfolio!
-          </Button> */}
         </Card>
       </CardGroup>
     </div>

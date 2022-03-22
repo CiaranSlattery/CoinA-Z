@@ -15,7 +15,6 @@ CoinListItem = ({
       style={{ cursor: "pointer" }}
       onClick={() => setCiaranCoin([coin])}
     >
-      {console.log(ciaranCoin)}
       <div className="coin-row">
         <div className="coin">
           <img src={coin.image} alt="crypto" />
