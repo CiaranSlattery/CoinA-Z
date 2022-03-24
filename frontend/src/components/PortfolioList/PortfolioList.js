@@ -34,8 +34,6 @@ const PortfolioList = () => {
     });
   };
 
-  
-
   const submitCoin = async (event) => {
     event.preventDefault();
 
@@ -48,10 +46,7 @@ const PortfolioList = () => {
     };
 
     try {
-      await PortfolioDataService.addAssetPortfolio(
-        username,
-        asset
-      );
+      await PortfolioDataService.addAssetPortfolio(username, asset);
     } catch (error) {
       console.log(error.message);
       // throw Error(error.message)
@@ -106,9 +101,9 @@ const PortfolioList = () => {
               </h5>
               {/* <Button className="btn btn-success" onClick={addAssetPortfolio}> */}
 
-              <button className="btn btn-success" type="submit">
+              {/* <button className="btn btn-success" type="submit">
                 Add to portfolio!
-              </button>
+              </button> */}
             </form>
           </div>
         </Card>

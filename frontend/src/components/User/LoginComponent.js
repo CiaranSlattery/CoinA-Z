@@ -1,12 +1,6 @@
 import React from "react";
 import AuthenticationService from "./AuthenticationService.js";
-import {
-  Card,
-  Form,
-  Row,
-  Col,
-  Button,
-} from "react-bootstrap";
+import { Card, Form, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 class LoginComponent extends React.Component {
@@ -60,7 +54,6 @@ class LoginComponent extends React.Component {
           {/* User Name: <input type="text" name = "username" value={this.state.username} onChange={this.handleChange}/>
                         Password: <input type="password" name = "password" value={this.state.password} onChange={this.handleChange} />
                         <button onClick={this.loginClicked}>Login</button> */}
-
 
           <Row className="justify-content-md-center">
             <Col xs={5}>

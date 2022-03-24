@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User/RegisterComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,7 @@
       <workItem from="1648027182876" duration="662000" />
       <workItem from="1648031266255" duration="333000" />
       <workItem from="1648034208606" duration="7336000" />
-      <workItem from="1648119862944" duration="10185000" />
+      <workItem from="1648119862944" duration="11396000" />
     </task>
     <servers />
   </component>
