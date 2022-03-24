@@ -1,0 +1,68 @@
+version: '3.7'
+
+services:
+  app-server:
+    build:
+      context: BackendApp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on: 
+      - db 
+    # environment:
+    #   SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/coinazuserdb
+    #   SPRING_DATASOURCE_USERNAME: user
+    #   SPRING_DATASOURCE_PASSWORD: user  
+
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=user
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=coinazuserdb
+      - DATABASE_PORT=3306   
+    networks:
+      - backend
+      - frontend
+
+  client-server:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_API_BASE_URL: http://127.0.0.1:8080/api
+    ports:
+      - "3000:3000" # Forward the exposed port 80 on the container to port 80 on the host machine
+    restart: always
+    depends_on:
+      - app-server
+    networks:
+      - frontend  
+  
+  db:
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    restart: always
+    container_name: db-mysql
+    environment:
+      - MYSQL_DATABASE=coinazuserdb
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root
+    cap_add:
+      - SYS_NICE  # CAP_SYS_NICE
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./dump:/docker-entrypoint-initdb.d
+      #- ~/apps/mysql:/var/lib/mysql
+    # networks:
+    #   - backend 
+    # command: --disable-partition-engine-check
+  
+volumes:
+  db-data:
+
+networks:
+  backend:
+  frontend:   
