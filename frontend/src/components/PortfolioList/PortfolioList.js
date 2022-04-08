@@ -101,9 +101,9 @@ const PortfolioList = () => {
               </h5>
               {/* <Button className="btn btn-success" onClick={addAssetPortfolio}> */}
 
-              {/* <button className="btn btn-success" type="submit">
+              <button className="btn btn-success" type="submit">
                 Add to portfolio!
-              </button> */}
+              </button>
             </form>
           </div>
         </Card>
@@ -115,9 +115,9 @@ const PortfolioList = () => {
           <Card.Header>Portfolio</Card.Header>
           <UserPortfolio coins={coins} ciaranCoin={ciaranCoin} />
 
-          <Button className="btn btn-success" onClick={refreshPortfolio}>
+          {/* <Button className="btn btn-success" onClick={refreshPortfolio}>
             View Ping!
-          </Button>
+          </Button> */}
         </Card>
       </CardGroup>
     </div>
