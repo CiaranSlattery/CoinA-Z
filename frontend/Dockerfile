@@ -23,6 +23,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose port 80 to the Docker host, so we can access it 
 # from the outside.
-EXPOSE 3000
+EXPOSE 80
 
 ENTRYPOINT ["nginx","-g","daemon off;"]
