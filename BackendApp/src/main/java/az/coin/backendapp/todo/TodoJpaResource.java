@@ -10,10 +10,8 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins="http://54.247.123.110/:3000")
+@CrossOrigin(origins="http://54.247.123.110:3000")
 public class TodoJpaResource {
-
-
 
     @Autowired
     private TodoJpaRepository todoJpaRepository;

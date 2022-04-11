@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/helloWorld/BasicAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/helloWorld/BasicAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtAuthenticationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtAuthenticationRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Backend/src/main/java/coin/az" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3rd Year/Desktop/empty test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BackendApp" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -180,6 +183,7 @@
       <workItem from="1648031266255" duration="333000" />
       <workItem from="1648034208606" duration="7336000" />
       <workItem from="1648119862944" duration="11814000" />
+      <workItem from="1649665785132" duration="440000" />
     </task>
     <servers />
   </component>

@@ -7,11 +7,11 @@ COPY .mvn .mvn
 
 COPY pom.xml .
 
-#RUN ./mvnw dependency:go-offline -B
+RUN ./mvnw dependency:go-offline -B
 
 COPY src src
 
-#RUN ./mvnw package -DskipTests
+RUN ./mvnw package -DskipTests
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 FROM adoptopenjdk/openjdk11:alpine-jre
