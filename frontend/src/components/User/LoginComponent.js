@@ -35,6 +35,7 @@ class LoginComponent extends Component {
         );
         this.props.history.push(`/welcome/${this.state.username}`);
       })
+      .then(() => this.props.setLoginClicked(prevState => !prevState))
       .catch(() => {
         this.setState({ showSuccessMessage: false });
         this.setState({ hasLoginFailed: true });

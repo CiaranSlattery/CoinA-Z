@@ -63,7 +63,7 @@ const PortfolioList = () => {
   return (
     <div className="text-white">
       {" "}
-      Welcome to our portfolio application!
+      {/* Welcome to our portfolio application! */}
       <div>Here you can create your own portfolio to manage and track.</div>
       <CardGroup>
         <Card

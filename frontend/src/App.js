@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./App.css";
 import "./bootstrap.css";
 import NavigationBar from "./components/pages/NavigationBar";
@@ -27,12 +27,13 @@ import features from "./components/pages/Features";
 import AboutPage from "./components/pages/About";
 
 const App = () => {
+  const [loginClicked, setLoginClicked] = useState(false);
   return (
     <div className="App">
       <Router>
         <>
           <HeaderDisplay />
-          <NavigationBar />
+          <NavigationBar loginClicked={loginClicked}  setLoginClicked={setLoginClicked}/>
           <Container>
             <Switch>
               <Route path="/" exact component={HomePage} />
@@ -40,7 +41,7 @@ const App = () => {
               <Route path="/features" exact component={features} />
               <Route path="/coins" exact component={Coins} />
               <Route path="/coins/:id" exact component={CoinDetailPage} />
-              <Route path="/login" exact component={LoginComponent} />
+              <Route path="/login" exact render={(props) => <LoginComponent setLoginClicked={setLoginClicked} {...props} />} />
               <Route path="/register" exact component={RegisterComponent} />
               <Route path="/about" exact component={AboutPage} />
               <AuthenticatedRoute path="/welcome/:name" component={Welcome} />

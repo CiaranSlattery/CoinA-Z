@@ -13,3 +13,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.net-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  border: 1px solid gray;
+}

@@ -33,6 +33,15 @@ const UserPortfolio = ({coins, ciaranCoin}) => {
     refreshPortfolio()
   }, [ciaranCoin])
 
+  const totalValue = () => {
+    let totalSum = 0;
+    fetchedData?.forEach((coin) => {
+      totalSum += Math.round(coins.find((x) => x.id === coin.id)?.current_price * coin.quantity)}) 
+    return totalSum  
+  }
+      
+  
+
   return (
     <>
       <div className="header">
@@ -51,6 +60,10 @@ const UserPortfolio = ({coins, ciaranCoin}) => {
           </div>
         ))}
       </div>
+      <div className="net-value">
+        <p>Net Value: $ {totalValue()}</p>
+      </div>
+
     </>
   );
 };
