@@ -21,14 +21,14 @@ import HelloWorldService from "./HelloWorldService";
                      Welcome {this.props.match.params.name}. You can view your todos here <Link to="/todos">here</Link>
                      <p>You can view your portfolio here <Link to="/portfolio">here</Link></p>
                 </div>
-                 <div className="container">
+                 {/* <div className="container">
                      Click here to get a customized welcome message.
                      <button onClick={this.retrieveWelcomeMessage}
                              className="btn btn-success">Get Welcome Message</button>
                  </div>
                  <div className="container">
                      {this.state.welcomeMessage}
-                 </div>
+                 </div> */}
              </>
         )
      }

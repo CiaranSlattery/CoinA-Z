@@ -57,7 +57,6 @@ function CoinsHome() {
           );
         })}
       </Container>
-      <Footer />
     </div>
   );
 }

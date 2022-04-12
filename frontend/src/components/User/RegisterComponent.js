@@ -15,6 +15,7 @@ class RegisterComponent extends Component {
   render() {
     return (
       <Row className="justify-content-md-center">
+        <p></p>
         <Col xs={5}>
           <Card className="border border-dark bg-dark text-white">
             <Card.Header>Register</Card.Header>
@@ -26,8 +27,8 @@ class RegisterComponent extends Component {
                     input
                     type="username"
                     placeholder="Enter Username"
-                    value={this.state.username}
-                    onChange={this.handleChange}
+                    // value={this.state.username}
+                    // onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
@@ -36,8 +37,8 @@ class RegisterComponent extends Component {
                     input
                     type="email"
                     placeholder="Enter Email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
+                    // value={this.state.email}
+                    // onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupPassword">
@@ -46,8 +47,8 @@ class RegisterComponent extends Component {
                     input
                     type="password"
                     placeholder="Enter Password"
-                    value={this.state.password}
-                    onChange={this.handleChange}
+                    // value={this.state.password}
+                    // onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupPasswordCheck">
@@ -56,8 +57,8 @@ class RegisterComponent extends Component {
                     input
                     type="passwordcheck"
                     placeholder="Re-Enter Password"
-                    value={this.state.password}
-                    onChange={this.handleChange}
+                    // value={this.state.password}
+                    // onChange={this.handleChange}
                   />
                 </Form.Group>
               </Form>

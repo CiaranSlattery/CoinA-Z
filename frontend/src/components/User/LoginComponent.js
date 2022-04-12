@@ -1,9 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import AuthenticationService from "./AuthenticationService.js";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class LoginComponent extends React.Component {
+class LoginComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,18 +45,14 @@ class LoginComponent extends React.Component {
     return (
       <div className="text-white">
         <div className="container">
-          {/*<ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/>*/}
           {this.state.hasLoginFailed && (
             <div className="warning">Invalid Credentials</div>
           )}
           {this.state.showSuccessMessage && <div>Login Successful</div>}
-          {/*<ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/>*/}
-          {/* User Name: <input type="text" name = "username" value={this.state.username} onChange={this.handleChange}/>
-                        Password: <input type="password" name = "password" value={this.state.password} onChange={this.handleChange} />
-                        <button onClick={this.loginClicked}>Login</button> */}
 
           <Row className="justify-content-md-center">
             <Col xs={5}>
+              <p></p>
               <Card className="border border-dark bg-dark text-white">
                 <Card.Header>Login</Card.Header>
                 <Card.Body>

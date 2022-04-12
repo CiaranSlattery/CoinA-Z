@@ -59,7 +59,7 @@ function Coins() {
           />
         );
       })}
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 }
