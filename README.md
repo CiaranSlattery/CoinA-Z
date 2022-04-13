@@ -1,5 +1,5 @@
 # Coin A-Z - Crpyto Tracker, Portfolio
-## coina-z.com
+## http://coina-z.com
 
 ### Coin A-Z is a full-stack cryptocurrency tracking and data website. 
 I developed Coin A-Z as part of my final year project.
