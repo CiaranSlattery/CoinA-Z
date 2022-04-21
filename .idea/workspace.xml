@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="506e9a44-f9c7-43b9-9efa-6b7d70cf769f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendApp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/basic/auth/SpringSecurityConfigurationBasicAuth.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/helloWorld/BasicAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/helloWorld/BasicAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JWTWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JWTWebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JwtTokenAuthorizationOncePerRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JwtTokenAuthorizationOncePerRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtAuthenticationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtAuthenticationRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtTokenRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/jwt/resource/JwtTokenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/AssetResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/portfolioTracker/AssetResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/todo/TodoJpaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/java/az/coin/backendapp/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioList/PortfolioList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserPortfolio/UserPortfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserPortfolio/UserPortfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/homepage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/homepage/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CoinDetailPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CoinDetailPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/mockdata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/themes.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +202,7 @@
       <workItem from="1648034208606" duration="7336000" />
       <workItem from="1648119862944" duration="11814000" />
       <workItem from="1649665785132" duration="1140000" />
+      <workItem from="1650530979627" duration="300000" />
     </task>
     <servers />
   </component>

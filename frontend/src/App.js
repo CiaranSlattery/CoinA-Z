@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./bootstrap.css";
 import NavigationBar from "./components/pages/NavigationBar";
@@ -14,9 +14,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  BrowserRouter,
 } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Todo from "./components/todo/Todo";
 import AuthenticatedRoute from "./components/User/AuthenticatedRoute";
 import HomePage from "./components/homepage/HomePage";
@@ -37,7 +36,6 @@ const App = () => {
           <Container>
             <Switch>
               <Route path="/" exact component={HomePage} />
-
               <Route path="/features" exact component={features} />
               <Route path="/coins" exact component={Coins} />
               <Route path="/coins/:id" exact component={CoinDetailPage} />
@@ -49,7 +47,6 @@ const App = () => {
               <AuthenticatedRoute path="/todos" component={ListToDosComponents}/>
               <AuthenticatedRoute path="/portfolio" component={PortfolioList} />
               <AuthenticatedRoute exactpath="/logout" component={LogoutComponent} />
-
               <Route component={ErrorComponent} />
             </Switch>
             <Footer />

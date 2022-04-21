@@ -6,8 +6,6 @@ import AuthenticationService from "../User/AuthenticationService";
 import UserPortfolioCoins from "../portfolio/UserPortfolioCoins";
 // import Update from "../CoinPortfolio";
 import CoinListItem from "../CoinListItem/CoinListItem";
-import "./PortfolioList.css";
-import mockdata from "../../mockdata.json";
 import UserPortfolio from "../UserPortfolio/UserPortfolio";
 
 const PortfolioList = () => {
@@ -51,7 +49,6 @@ const PortfolioList = () => {
       console.log(error.message);
       // throw Error(error.message)
     }
-    console.log("mockdata", mockdata);
     setCiaranCoin([]);
     setCoinQuantity(0);
   };
