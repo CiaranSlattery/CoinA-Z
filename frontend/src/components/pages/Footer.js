@@ -4,22 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { Link } from "react-router-dom";
 import Img from "../../images/twitterbird.png";
 import coinImg from "../../images/CoinA-Z40.png";
-// class Footer extends React.Component{
-//     render() {
-//         let fullYear = new Date().getFullYear();
 
-//         return (
-//             <Navbar fixed="bottom" bg="dark" variant="dark">
-//                 <Container>
-//                     <Col lg={12} className="text-center text-muted">
-//                         <div>{fullYear} - {fullYear+1},  All Rights Reserved by Coin A-Z</div>
-//                     </Col>
-//                 </Container>
-//             </Navbar>
-
-//         );
-//     }
-// }
 const Footer = () => {
   let fullYear = new Date().getFullYear();
 
@@ -75,15 +60,6 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      {/* <Navbar fixed="bottom" bg="dark" variant="dark">
-        <Container>
-          <Col lg={12} className="text-center text-muted">
-            <div>
-              {fullYear} - {fullYear + 1}, All Rights Reserved by Coin A-Z
-            </div>
-          </Col>
-        </Container>
-      </Navbar> */}
     </MDBFooter>
   );
 };

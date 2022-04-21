@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import mockdata from "../../mockdata.json";
-import deleteAssetClicked from "../PortfolioList/PortfolioList";
 import AuthenticationService from "../User/AuthenticationService";
 import PortfolioDataService from "../portfolio/PortfolioDataService";
 

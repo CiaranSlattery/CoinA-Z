@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserResource {
 
     @Autowired
-    private UserService userService;
+    private UserRepository userRepository;
 
 }
